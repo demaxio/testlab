@@ -6,95 +6,113 @@
 	<meta content="Russian" name="language" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Testlab</title>
-	<link href="/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="/styles/swiper.css" rel="stylesheet" type="text/css" />
-	<link href="/styles/styles.css" rel="stylesheet" type="text/css" />
+	<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="styles/swiper.css" rel="stylesheet" type="text/css" />
+	<link href="styles/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<header>
-		<div class="header">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="header__left">
-						<a href="/" class="logo">
-							<img src="/images/logo.svg" alt="" class="logo__img" />
-						</a>
-					</div>
-					<div class="header__right">
-						<div class="hamburger-block">
-							<button class="hamburger" id="mobile-menu-btn">
-								<div class="hamburger__btn">
-									<div></div>
-								</div>
-							</button>
+	<div class="background">
+		<header>
+			<div class="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="header__left">
+							<a href="/" class="logo">
+								<img src="images/logo.svg" alt="" class="logo__img" />
+							</a>
 						</div>
-						<div class="mobile-menu" id="mobile-menu">
-							<div class="mobile-menu__bg mobile-menu__close"></div>
-							<div class="mobile-menu__wrapper" id="mobile-menu__wrapper">
-								<div class="mobile-menu__header">
-									<span class="close-btn close-btn--red mobile-menu__close"></span>
-									<div class="mobile-menu__logo">
-										<a href="/" class="">
-											<img src="/images/logo.svg" alt="" class="mobile-menu__logo-img" />
-										</a>
+						<div class="header__right">
+							<div class="hamburger-block">
+								<button class="hamburger" id="mobile-menu-btn">
+									<div class="hamburger__btn">
+										<div></div>
 									</div>
-								</div>
-								<ul class="mobile-nav__group">
-									<li class="mobile-nav__item">
-										<a class="mobile-nav__item" href="/">
-											<span class="mobile-nav__item-name">Как это работает</span>
-										</a>
-									</li>
-									<li class="mobile-nav__item">
-										<a class="mobile-nav__item" href="/">
-											<span class="mobile-nav__item-name">3-й блок</span>
-										</a>
-									</li>
-									<li class="mobile-nav__item">
-										<a class="mobile-nav__item" href="/"><span
-												class="mobile-nav__item-name">Вопросы и ответы</span></a>
-									</li>
-									<li class="mobile-nav__item">
-										<a class="mobile-nav__item" href="/"><span
-												class="mobile-nav__item-name">Форма</span></a>
-									</li>
-								</ul>
+								</button>
 							</div>
-						</div>
-						<div class="main-menu">
-							<nav>
-								<ul class="main-menu__group">
-									<li class="main-menu__item">
-										<a class="main-menu__item" href="/">
-											<span class="main-menu__item-name">Как это работает</span>
-										</a>
-									</li>
-									<li class="main-menu__item">
-										<a class="main-menu__item" href="/">
-											<span class="main-menu__item-name">3-й блок</span>
-										</a>
-									</li>
-									<li class="main-menu__item">
-										<a class="main-menu__item" href="/">
-											<span class="main-menu__item-name">Вопросы и ответы</span>
-										</a>
-									</li>
-									<li class="main-menu__item">
-										<a class="main-menu__item" href="/">
-											<span class="main-menu__item-name">Форма</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
+							<div class="mobile-menu" id="mobile-menu">
+								<div class="mobile-menu__bg mobile-menu__close"></div>
+								<div class="mobile-menu__wrapper" id="mobile-menu__wrapper">
+									<div class="mobile-menu__header">
+										<span class="close-btn close-btn--red mobile-menu__close"></span>
+										<div class="mobile-menu__logo">
+											<a class="mobile-nav__item-link" href="/">
+												<img src="/images/logo.svg" alt="" class="mobile-menu__logo-img" />
+											</a>
+										</div>
+									</div>
+									<ul class="mobile-nav__group">
+										<li class="mobile-nav__item">
+											<a class="mobile-nav__item-link" href="/">
+												<span class="mobile-nav__item-name">Как это работает</span>
+											</a>
+										</li>
+										<li class="mobile-nav__item">
+											<a class="mobile-nav__item-link" href="/">
+												<span class="mobile-nav__item-name">3-й блок</span>
+											</a>
+										</li>
+										<li class="mobile-nav__item">
+											<a class="mobile-nav__item-link" href="/">
+												<span class="mobile-nav__item-name">Вопросы и ответы</span>
+											</a>
+										</li>
+										<li class="mobile-nav__item">
+											<a class="mobile-nav__item-link" href="/">
+												<span class="mobile-nav__item-name">Форма</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="main-menu">
+								<nav>
+									<ul class="main-menu__group">
+										<li class="main-menu__item">
+											<a class="main-menu__item-link" href="/">
+												<span class="main-menu__item-name">Как это работает</span>
+											</a>
+										</li>
+										<li class="main-menu__item">
+											<a class="main-menu__item-link" href="/">
+												<span class="main-menu__item-name">3-й блок</span>
+											</a>
+										</li>
+										<li class="main-menu__item">
+											<a class="main-menu__item-link" href="/">
+												<span class="main-menu__item-name">Вопросы и ответы</span>
+											</a>
+										</li>
+										<li class="main-menu__item">
+											<a class="main-menu__item-link" href="/">
+												<span class="main-menu__item-name">Форма</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<script src="/sripts/swiper.js" type="text/javascript" charset="UTF-8"></script>
-	<script src="/sripts/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
-	<script src="/sripts/sript.js" type="text/javascript" charset="utf-8" asyncdefer></script>
+		</header>
+		<section class="banner">
+			<div class="banner__block">
+				<h1 class="banner__block-title">
+					Говорят, никогда не поздно сменить профессию
+				</h1>
+				<p class="banner__block-description">
+					Сделай круто тестовое задание и у тебя получится
+				</p>
+				<button class="btn banner__block-button">
+					Проще простого
+				</button>
+			</div>
+		</section>
+	</div>
+	
+	<script src="sripts/swiper.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="sripts/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="sripts/sript.js" type="text/javascript" charset="utf-8" asyncdefer></script>
 </body>
 </html>
