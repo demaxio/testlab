@@ -1,0 +1,61 @@
+/* |===============| FONTS |==============| */
+@font-face {
+    font-family: "Graphik LCG";
+    src: local("fonts/MGraphikLCG-Bold"), 
+    url("/fonts/GraphikLCG-Bold.woff2") format("woff2"),
+    url("/fonts/GraphikLCG-Bold.wpff") format("woff"),
+    url("/fonts/GraphikLCG-Bold.ttf") format("ttf"),
+    url("/fonts/GraphikLCG-Bold.eot") format("eot");
+    font-weight: 600;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Graphik LCG";
+    src: local("fonts/MGraphikLCG-Regular"), 
+    url("/fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("/fonts/GraphikLCG-Regular.wpff") format("woff"),
+    url("/fonts/GraphikLCG-Regular.ttf") format("ttf"),
+    url("/fonts/GraphikLCG-Regular.eot") format("eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* |===============| END FONTS |==============| */
+/* |===============| ROOT |==============| */
+:root {
+    --black: #191C1F;
+    --dark-gray: #5E646A;
+    --gray: #83898F;
+    --mid-grey: #C2C8CD;
+    --light-gray: #ECEFF2;
+    --extralight-gray: #F6F8FA;
+    --white: #ffffff;
+    --primary: #2A6CEA;
+    --primary-hover: #397DFF;
+    --usual_font: "Graphik LCG";
+    --h1_size: 52px;
+    --h2_size: 40px;
+    --h3_size: 32px;
+    --h4_size: 24px;
+    --h5_size: 20px;
+    --h6_size: 16px;
+    --body-18: 18px;
+    --body-16: 16px;
+    --body-14: 14px;
+    --body-12: 12px;
+}
+/* |===============| END ROOT |==============| */
+/* |===============| @ MEDIA |==============| */
+/* @MAX*/
+@media (max-width: 768px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+}
+/* END @MAX */
+/* @MIN */
+@media (min-width: 768px) {
+}
+/* END @MIN */
+/* |===============| END @ MEDIA |==============| */
