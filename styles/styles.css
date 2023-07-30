@@ -2,10 +2,10 @@
 @font-face {
     font-family: "Graphik LCG";
     src: local("fonts/MGraphikLCG-Bold"),
-        url("/fonts/GraphikLCG-Bold.woff2") format("woff2"),
-        url("/fonts/GraphikLCG-Bold.wpff") format("woff"),
-        url("/fonts/GraphikLCG-Bold.ttf") format("ttf"),
-        url("/fonts/GraphikLCG-Bold.eot") format("eot");
+        url("../fonts/GraphikLCG-Bold.woff2") format("woff2"),
+        url("../fonts/GraphikLCG-Bold.wpff") format("woff"),
+        url("../fonts/GraphikLCG-Bold.ttf") format("ttf"),
+        url("../fonts/GraphikLCG-Bold.eot") format("eot");
     font-weight: 600;
     font-style: bold;
 }
@@ -13,10 +13,10 @@
 @font-face {
     font-family: "Graphik LCG";
     src: local("fonts/MGraphikLCG-Regular"),
-        url("/fonts/GraphikLCG-Regular.woff2") format("woff2"),
-        url("/fonts/GraphikLCG-Regular.wpff") format("woff"),
-        url("/fonts/GraphikLCG-Regular.ttf") format("ttf"),
-        url("/fonts/GraphikLCG-Regular.eot") format("eot");
+        url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+        url("../fonts/GraphikLCG-Regular.wpff") format("woff"),
+        url("../fonts/GraphikLCG-Regular.ttf") format("ttf"),
+        url("../fonts/GraphikLCG-Regular.eot") format("eot");
     font-weight: normal;
     font-style: normal;
 }
@@ -50,15 +50,43 @@
 * {
     font-family: Graphik LCG;
 }
+p {
+    margin-bottom: 0;
+}
 h1 {
     color: var(--white);
     text-align: center;
-    font-size: 52px;
+    font-size: var(--h1_size);
     font-style: normal;
     font-weight: 600;
     line-height: 123.077%; /* 123.077% */
     margin-bottom: 0;
     padding-bottom: 18px;
+}
+h2 {
+    font-size: var(--h2_size);
+    text-align: center;
+    font-weight: 600;
+    line-height: 140%;
+}
+h3 {
+    font-size: var(--h3_size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+h6 {
+    font-size: var(--h6_size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+section {
+    margin-bottom: 80px;
+}
+section > div {
+    max-width: 1210px !important;
 }
 /* |===============| END DEFUALT |==============| */
 /* |===============| HEADER |==============| */
@@ -183,6 +211,7 @@ header {
 .banner {
     background: rgba(42, 108, 234, 0.800000011920929);
     height: calc(100% - 96px);
+    padding-bottom: 0;
 }
 .banner__block {
     padding-top: 233px;
@@ -206,12 +235,147 @@ header {
     font-weight: 600;
     line-height: 120%;
 }
-.banner__block-button:hover{
+.banner__block-button:hover {
     border: 1px solid var(--mid-grey);
     background: transparent;
 }
 /* |===============| END BANNER BLOCK |==============| */
+/* |===============| PRINCIPES BLOCK |==============| */
+.principes__block {
+    max-width: 1210px;
+    margin: 0 auto;
+    width: 100%;
+}
+.principes__title {
+    padding: 80px 0 60px 0;
+    margin: 0 auto;
+}
+.principe__img-wrap {
+    padding-bottom: 16px;
+}
+.principe__title {
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--black);
+}
+.principe__description {
+    color: var(--dark-gray, #5e646a);
+    font-size: var(--body-14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171.429%;
+}
+/* |===============| END PRINCIPES BLOCK |==============| */
+/* |===============| THIRD BLOCK |==============| */
+.third-block {
+    display: flex;
+    align-items: center;
+}
+.third-block__text {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.third-block__description {
+    color: var(--dark-gray);
+    font-size: var(--body-16);
+    font-weight: 400;
+    line-height: 175%;
+}
+.third-block__img-wrap {
+    background-image: url("../images/about.png");
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 418px;
+    height: 418px;
+}
+/* |===============| END THIRD BLOCK |==============| */
+/* |===============| SLIDER BLOCK |==============| */
+.slider {
+    background: var(--extralight-gray);
+    padding-bottom: 103px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.slider-title {
+    padding: 57px 0 32px 0;
+    margin: 0 auto;
+}
+.swiper-wrapper {
+    max-width: 1087px;
+    margin: 0 auto;
+    height: 462px;
+}
+.swiper-slide {
+    background: #fff;
+    display: block;
+    width: 341px !important;
+    margin-right: 32px !important;
+    height: 316px;
+    padding: 22px 22px 62px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white, #fff);
+    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.1);
+}
+.swiper-slide:hover {
+    cursor: pointer;
+}
 
+.swiper-slide__img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: 16px;
+}
+
+.swiper-slide__top {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.swiper-slide__label {
+    color: var(--dark-gray);
+    font-size: var(--body-12);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%; /* 133.333% */
+}
+
+.swiper-slide__description {
+    font-size: var(--body-14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171.429%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    top: var(--swiper-navigation-top-offset, 35%) !important;
+}
+.swiper-pagination {
+    bottom: 70px !important;
+}
+/* |===============| END SLIDER BLOCK |==============| */
+/* |===============| FOOTER |==============| */
+footer {
+    border-top: 1px solid var(--light-gray);
+}
+.footer-text {
+    margin: 0 auto;
+    padding: 28px 0;
+    text-align: center;
+}
+/* |===============| END FOOTER |==============| */
 /* |===============| @ MEDIA |==============| */
 /* @MAX*/
 @media (max-width: 768px) {
@@ -220,6 +384,9 @@ header {
     }
     .hamburger-block {
         display: block;
+    }
+    .swiper-slide {
+        width: 50%; /* для двух слайдов на странице при меньшем разрешении */
     }
 }
 @media (max-width: 375px) {
